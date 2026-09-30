@@ -12,7 +12,7 @@ public class Main {
 
         perguntas[0] = new MultiplaEscolha(
                 "Qual grupo de K-pop lançou o sucesso 'Dynamite'?",
-                10,
+                15,
                 new String[]{"A) EXO", "B) BTS", "C) Stray Kids"},
                 "B"
         );
@@ -34,6 +34,7 @@ public class Main {
         IO.println("=== QUIZ K-POP ===");
 
 
+
         for (Pergunta pt : perguntas) {
             pt.exibirPergunta();
             IO.println("Sua resposta (digite a letra): ");
@@ -47,6 +48,12 @@ public class Main {
             } else {
                 IO.println("-> Resposta incorreta!");
             }
+
+        }
+        if (pontuacaoTotal >= 30) {
+            IO.println("VITÓRIA! Você atingiu a meta.");
+        } else {
+            IO.println("DERROTA! Você não atingiu a meta.");
         }
 
         IO.println("\n=========================");
