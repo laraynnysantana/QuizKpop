@@ -6,7 +6,7 @@ public abstract class Pergunta {
         return questao;
     }
 
-    public void setQuestao(String questao) {
+    public void Questao(String questao) {
         this.questao = questao;
     }
 
@@ -14,7 +14,7 @@ public abstract class Pergunta {
         return pontuacao;
     }
 
-    public void setPontuacao(int pontuacao) {
+    public void Pontuacao(int pontuacao) {
         this.pontuacao = pontuacao;
     }
 
@@ -24,9 +24,9 @@ public abstract class Pergunta {
 
     }
 
-    // 1. Exibe a pergunta e as alternativas no console
+
     public abstract void exibirPergunta();
 
-    // 2. Compara a resposta digitada com a resposta correta
+
     public abstract boolean validarResposta(String resposta);
 }
